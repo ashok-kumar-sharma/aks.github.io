@@ -1,0 +1,68 @@
+.set-default{
+	color: #000 !important;
+	text-decoration: none !important;
+	text-transform: none !important;
+}
+.bg-trans{
+	background-color: rgba(0,0,0,0.3) !important;
+}
+.chat-background{
+	background-image:url("chat-background.jpg");
+	background-repeat: repeat;
+	background-size: 200px;
+	background-attachment: fixed;
+}
+.chat-user-1{
+	background-color: rgb(10,210,160);
+}
+
+.hover-effect-container{
+	position: relative;
+	width: 100%;
+}
+
+.layer-1{
+	display: block;
+	opacity: 1;
+	transition: 0.3s ease;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+}
+
+.layer-2{
+	transition: 0.3s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+}
+
+.hover-effect-container:hover .layer-1{
+	opacity: 0.3;
+}
+.hover-effect-container:hover .layer-2{
+	opacity: 1;
+}
+
+.layer-3{
+	position: absolute;
+	bottom: 10%;
+	right: 20%;
+	transform: translate(-10%,-20%);
+}
+
+.notification{
+	width: 20px; 
+	height: 20px; 
+	border-radius: 360px; 
+	font-size: 10px; 
+	text-align: center; 
+	line-height: 20px; 
+	font-size: 12px; 
+	font-weight: bold; 
+	color: #fff;
+	background-color: rgb(10,210,160);
+}

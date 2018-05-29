@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>Responsive WhatsApp</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top d-none d-md-flex shadow-sm mb-2">
+			<a class="navbar-brand" href="index.html">
+				<img class="img img-fluid rounded-circle" width="30px" src="back-arrow.png">
+				<img class="img img-fluid rounded-circle" width="40px" src="group-avatar.png">
+			</a>
+			<a class="navbar-brand mr-auto" href="#">
+				<div class="row">
+					<div class="col d-flex flex-column">
+						<h5>Name of Group</h5>
+						<small class="text-muted" style="font-size: 0.9rem; margin-top:-8px;">Priya, +91 8948483784, Sunil, Anil, Rishab Raj...</small>
+					</div>
+				</div>
+			</a>
+			
+			<div class="d-flex">
+				<a class="nav-item nav-link" href="#">
+					<img src="search-grey.png" alt="Search" title="Search" class="img img-fluid" width="30px">
+				</a>
+				<a class="nav-link" href="#">
+					<img src="attachment.png" alt="Attach" title="Attach" class="img img-fluid" width="30px">
+				</a>
+				<div class="dropdown">
+					<a href="#" class="btn" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="dotted-button.png" alt="Dotted Button" title="Dotted Button" class="img img-fluid" width="30px">
+					</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+						<a class="dropdown-item" href="#">Group Info</a>
+						<a class="dropdown-item" href="#">Select Messages</a>
+						<a class="dropdown-item" href="#">Mute</a>
+						<a class="dropdown-item" href="#">Clear Messages</a>
+						<a class="dropdown-item" href="#">Exit Group</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top d-md-none shadow mb-2">
+			<a class="navbar-brand" href="index.html">
+				<img class="img img-fluid rounded-circle" width="20px" src="back-arrow-white.png">
+				<img class="img img-fluid rounded-circle" width="40px" src="group-avatar.png">
+			</a>
+			<a class="navbar-brand mr-auto text-white" href="#">
+				<div class="row">
+					<div class="col d-flex flex-column">
+						<h5>Name of Group</h5>
+						<small style="font-size: 0.7rem; margin-top:-8px;">Priya, +91 8948483784, Rishab Raj...</small>
+					</div>
+				</div>
+			</a>
+
+			<div class="d-flex">
+				<a class="nav-item nav-link" href="#">
+					<img src="search.png" alt="Search" title="Search" class="img img-fluid" width="30px">
+				</a>
+				<div class="dropdown">
+					<a href="#" class="btn" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<img src="dotted-button-md.png" alt="Dotted Button" title="Dotted Button" class="img img-fluid" width="30px">
+					</a>
+					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu">
+						<a class="dropdown-item" href="#">Group Info</a>
+						<a class="dropdown-item" href="#">Select Messages</a>
+						<a class="dropdown-item" href="#">Mute</a>
+						<a class="dropdown-item" href="#">Clear Messages</a>
+						<a class="dropdown-item" href="#">Exit Group</a>
+					</div>
+				</div>
+			</div>			
+		</nav>
+
+		<div class="container chat-background">
+			<div class="row">
+				<div class="col p-4 d-none d-md-block">
+					<div class="d-flex justify-content-center">
+						<small class="bg-info p-2 rounded text-uppercase text-white pl-3 pr-3">Yesterday</small>
+					</div>
+					<div class="card m-md-4 m-lg-5" style="max-width: 30rem;">
+						<div class="card-header">
+							<h6 class="text-info">+91-8767565443</h6>
+						</div>
+						<div class="card-body">
+							<img class="card-img" src="image-placeholder.png">
+							WhatsApp is the most popular messaging across the world with more than a billion active users. It is available as a mobile application and as well as a web application.
+							<small class="text-muted d-flex justify-content-end">10:01 PM</small>
+						</div>
+					</div>
+
+					<div class="card m-md-4 m-lg-5" style="max-width: 30rem;">
+						<div class="card-header">
+							<h6 class="text-success">Anil</h6>
+						</div>
+						<div class="card-body">
+							WhatsApp is the most popular messaging across the world with more than a billion active users. It is available as a mobile application and as well as a web application.
+							<small class="text-muted d-flex justify-content-end">10:05 PM</small>
+						</div>
+					</div>
+
+					<div class="d-flex justify-content-center">
+						<small class="bg-info p-2 rounded text-uppercase text-white pl-3 pr-3">Today</small>
+					</div>
+					<div class="card m-md-4 m-lg-5" style="max-width: 30rem;">
+						<div class="card-header">
+							<h6 class="text-warning">Sunil</h6>
+						</div>
+						<div class="card-body">
+							WhatsApp is the most popular messaging across the world with more than a billion active users. It is available as a mobile application and as well as a web application.
+							<small class="text-muted d-flex justify-content-end">10:05 PM</small>
+						</div>
+					</div>
+
+					<div class="card m-md-4 m-lg-5" style="max-width: 30rem;">
+						<div class="card-header">
+							<h6 class="text-info">Rishab Raj</h6>
+						</div>
+						<div class="card-body">
+							WhatsApp is the most popular messaging across the world with more than a billion active users. It is available as a mobile application and as well as a web application.
+							<small class="text-muted d-flex justify-content-end">10:15 PM</small>
+						</div>
+					</div>
+
+					<div class="card m-md-4 m-lg-5" style="max-width: 30rem;">
+						<div class="card-header">
+							<h6 class="text-success">Anil</h6>
+						</div>
+						<div class="card-body">
+							WhatsApp is the most popular messaging across the world with more than a billion active users. It is available as a mobile application and as well as a web application.
+							<small class="text-muted d-flex justify-content-end">10:25 PM</small>
+						</div>
+					</div>
+				</div>
+
+				<div class="col p-4 d-md-none">
+					<div class="d-flex justify-content-center">
+						<small class="bg-info p-2 rounded text-uppercase text-white pl-3 pr-3">Yesterday</small>
+					</div>
+					<div class="card m-3" style="width: 25rem;">
+						<div class="card-header">
+							<h6 class="text-info">+91-8767565443</h6>
+						</div>
+						<div class="card-body">
+							<img class="card-img" src="image-placeholder.png">
+							WhatsApp is the most popular messaging across the world with more than a billion active users. It is available as a mobile application and as well as a web application.
+							<small class="text-muted d-flex justify-content-end">10:01 PM</small>
+						</div>
+					</div>
+
+					<div class="card m-3" style="max-width: 25rem;">
+						<div class="card-header">
+							<h6 class="text-success">Anil</h6>
+						</div>
+						<div class="card-body">
+							WhatsApp is the most popular messaging across the world with more than a billion active users. It is available as a mobile application and as well as a web application.
+							<small class="text-muted d-flex justify-content-end">10:05 PM</small>
+						</div>
+					</div>
+
+					<div class="d-flex justify-content-center">
+						<small class="bg-info p-2 rounded text-uppercase text-white pl-3 pr-3">Today</small>
+					</div>
+					<div class="card m-3" style="max-width: 25rem;">
+						<div class="card-header">
+							<h6 class="text-warning">Sunil</h6>
+						</div>
+						<div class="card-body">
+							WhatsApp is the most popular messaging across the world with more than a billion active users. It is available as a mobile application and as well as a web application.
+							<small class="text-muted d-flex justify-content-end">10:05 PM</small>
+						</div>
+					</div>
+
+					<div class="card m-3" style="max-width: 25rem;">
+						<div class="card-header">
+							<h6 class="text-info">Rishab Raj</h6>
+						</div>
+						<div class="card-body">
+							WhatsApp is the most popular messaging across the world with more than a billion active users. It is available as a mobile application and as well as a web application.
+							<small class="text-muted d-flex justify-content-end">10:15 PM</small>
+						</div>
+					</div>
+
+					<div class="card m-3" style="max-width: 25rem;">
+						<div class="card-header">
+							<h6 class="text-success">Anil</h6>
+						</div>
+						<div class="card-body">
+							WhatsApp is the most popular messaging across the world with more than a billion active users. It is available as a mobile application and as well as a web application.
+							<small class="text-muted d-flex justify-content-end">10:25 PM</small>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	</body>
+</html>
