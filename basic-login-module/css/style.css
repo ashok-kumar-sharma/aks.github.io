@@ -1,0 +1,105 @@
+body,p{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: rgba(0,0,0,0.8);
+  font-size: 16px;
+}
+.flex-container{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(60,60,60,0.4);
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255,255,255,1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 30px 1px rgba(60,60,60,0.2);
+}
+.logo{
+  height: 90px;
+  width: 90px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 360px;
+  box-shadow: 0px 3px 8px 1px rgba(100,100,100,0.1);
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.logo > img{
+  height: 80px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+.login-form > form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 20px;
+}
+.login-form > form > input{
+  width: 100%;
+  margin: 10px;
+  height: 30px;
+  border: 1px solid rgba(60,60,60,0.2);
+  border-radius: 4px;
+  padding: 6px 10px;
+  color: rgba(60,60,60,0.8);
+  font-size: 16px;
+}
+.login-form > form > input:focus{
+  outline: none;
+  border: 1px solid rgba(60,60,60,0.3);
+  box-shadow: 0px 0px 5px 1px rgba(60,60,60,0.2);
+}
+.login-form > form > button{
+  border: none;
+  outline: none;
+  padding: 12px 10px;
+  font-size: 16px;
+  background-color: rgba(0,120,255,1);
+  color: rgba(255,255,255,0.8);
+  width: 100%;
+  max-width: 180px;
+  margin: 10px;
+  border-radius: 4px;
+}
+.login-form > form > button:hover{
+  box-shadow: 0px 0px 5px 1px rgba(0,140,255,0.7);
+  color: rgba(255,255,255,1);
+  transition: color 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+.link{
+  text-decoration: none;
+  color: rgba(0,100,255,1);
+  border: 1px solid rgba(0,120,255,1);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.link:hover{
+  color: rgba(255,255,255,1);
+  background-color: rgba(0,140,255,1);
+  box-shadow: 0px 0px 3px 1px rgba(0,140,255,0.5);
+  transition: color 0.2s, background-color 0.2s;
+}
+.invalid{
+  border-color: rgba(255,0,0,0.6) !important;
+}
+.error-occured{
+  color: rgba(255,0,0,0.8);
+}
